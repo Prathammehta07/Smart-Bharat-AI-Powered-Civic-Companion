@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-dark: #0B1F3F;
+  --color-saffron: #FF9933;
+  --color-green-bharat: #138808;
+  --color-accent-teal: #0F9D58;
+  --color-accent-teal-hover: #0c8249;
+  --color-bg-light: #F5F7FA;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Utilities */
+.tricolor-text {
+  background: linear-gradient(to right, #FF9933 30%, #4A5568 50%, #138808 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tricolor-underline {
+  background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+  height: 4px;
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Custom Scrollbar for Chat */
+.chat-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(11, 31, 63, 0.1);
+  border-radius: 20px;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(11, 31, 63, 0.2);
+}
+
+/* Micro-animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(15, 157, 88, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(15, 157, 88, 0.6);
+  }
+}
+
+.glow-btn {
+  animation: pulseGlow 2.5s infinite;
+}
