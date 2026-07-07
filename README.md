@@ -39,7 +39,7 @@ Smart Bharat is a full-stack, GenAI-powered civic platform designed to simplify 
 
 ### Monorepo Structure
 ```
-smart-bharat/
+bharat/
 ├── package.json               # Root monorepo runner (concurrently starts both projects)
 ├── backend/                   # Node.js + Express API + SQLite Setup
 │   ├── src/db.ts              # Database schema definition
